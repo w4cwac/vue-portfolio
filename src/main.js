@@ -19,3 +19,43 @@ icons.addEventListener('click' , () => {
 document.getElementById('last-modif').innerHTML = 
 'dernière modification le :'+ document.lastModified;
 
+//fonction Modal
+var modal = document.querySelector(".modal");
+var trigger = document.querySelector(".example");
+var closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+
+//2eme modal
+var modalTwo = document.querySelector(".modal-two");
+var triggerTwo = document.querySelector(".example-two");
+var closeButtonTwo = document.querySelector(".close-button-two");
+
+function toggleModalTwo() {
+    modalTwo.classList.toggle("show-modal-two");
+}
+
+function windowOnClickTwo(event) {
+    if (event.target === modalTwo) {
+        toggleModalTwo();
+    }
+}
+
+
+triggerTwo.addEventListener("click", toggleModalTwo);
+closeButtonTwo.addEventListener("click", toggleModalTwo);
+window.addEventListener("click", windowOnClickTwo);
+

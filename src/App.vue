@@ -27,6 +27,8 @@
 
       </div>
       <div id="project">
+        <ProjectsCard/>
+    
 
       </div>
       <div id="contact">
@@ -63,12 +65,15 @@
 <script>
 
 import Apropos from './components/Apropos.vue';
+import ProjectsCard from './components/ProjectsCard.vue';
+
 
 export default{
   name: 'App',
   components :{
     Apropos,
-  }
+    ProjectsCard
+}
 
 
   
@@ -138,9 +143,8 @@ nav
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 120, 120);
-  height: 100vh;
-  width: 75%;
+  background-color: white;
+  width: 45vw;
   margin: auto;
   margin-top: 5%;
   border-style: double;
