@@ -11,12 +11,26 @@
             <div class="project-container">
                 <div class="project">
                     <img src="../assets/mon-cv.jpeg" alt="">
-                    <h2>Créer Boîte Modale</h2>
-                    <button class="example">Cliquez ici pour voir le modal!</button>
+                    <h2>Mon CV</h2>
+                    <button class="example">En savoir plus</button>
                     <div class="modal">
                         <div class="modal-content">
                             <span class="close-button">&times;</span>
-                            <h2>Ceci est un Modal</h2>
+                            <h2>Mon CV</h2>
+                            <h3>30/10/2023</h3>
+                            <p>Dans ce premier projet, j'ai du réaliser mon CV,
+                                en respectant un modèle précis. 
+                            </p>
+                                <img src="../assets/capture-de-mon-cv.png" alt="">
+                            <p>Pour le réaliser j'ai utilisé les technologies suivantes :</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <p>Ci-dessous le liens vers le repository githbub</p>
+                            <div class="project-button">
+                                <a href="https://github.com/w4cwac/Mon-CV" onclick="window.open(this.href);return false">Mon CV</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -24,24 +38,45 @@
                 </div>
                 <div class="project">
                     <img src="../assets/cdg.jpeg" alt="">
-                    <h2>Créer Boîte Modale</h2>
-                    <button class="example-two">Cliquez ici pour voir le modal!</button>
+                    <h2>Cahier des charges</h2>
+                    <button class="example-two">En savoir plus</button>
                     <div class="modal-two">
                         <div class="modal-content-two">
                             <span class="close-button-two">&times;</span>
-                            <h2>Ceci est un Modal V2</h2>
+                            <h2>Cahier des Charges</h2>
+                            <h3>13/11/2023</h3>
+                            <p>
+                                Pour ce deuxième projet j'ai rédigé intégralement un cahier des charges,
+                                ce dernier concernais le création d'un site pour une entreprise fictive.
+                            </p>
+                            <p>
+                                J'ai réalisé ce devoir à l'aide de l'outil Canva disponible gratuitement en ligne
+                            </p>
+                            <img src="../assets/capture-cdg.png" alt="">
+                            <div class="project-button">
+                                <a href="https://www.canva.com/design/DAFz23kfWpE/view" onclick="window.open(this.href);return false">Cahier des Charges</a>
+                            </div>
                         </div>
                     </div>
                     
                 </div>
                 <div class="project">
                     <img src="../assets/espace-com.jpeg" alt="">
-                    <h2>Créer Boîte Modale</h2>
-                    <button class="example-three">Cliquez ici pour voir le modal!</button>
+                    <h2>Espace Commentaire</h2>
+                    <button class="example-three">En savoir plus</button>
                     <div class="modal-three">
                         <div class="modal-content-three">
                             <span class="close-button-three">&times;</span>
-                            <h2>Ceci est un Modal V2</h2>
+                            <h2>Espace Commentaire</h2>
+                            <h3>27/11/2023</h3>
+                            <p>
+                                Dans ce troisième projet j'ai dynamisé un espace commentaire créé pour l'occasion,
+                                Le CEF nous a fourni un fichier html et j'y ai ajouté un script JavaScript pour pouvoir ajouter des commentaire,
+                            </p>
+                            <img src="../assets/capture-espace-com.png" alt="">
+                            <div class="project-button">
+                                <a href="https://github.com/w4cwac/espace_com" onclick="window.open(this.href);return false">Espace commentaire</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,6 +112,15 @@ export default{
         height: 100%;
         text-align: center;
     }
+    .container-one{
+        border-radius: 25px;
+        background-color: aqua;
+    }
+    .container-two{
+        border-radius: 25px;
+        background-color: blueviolet;
+        margin: 2.5%;
+    }
     .project-container{
         display: flex;
         flex-direction: row;
@@ -84,9 +128,36 @@ export default{
         align-items: center;
     }
     .project{
-        padding: 5%;
+        padding: 2.5%;
     }
 
+    .project img{
+        height: 70px;
+    }
+    
+    li{
+        list-style: none;
+    }
+
+    .project-button{
+        background-color: aqua;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    
+    .project-button a{
+        text-decoration: none;
+        color: black;
+    }
+    .modal-content img{
+        height: 300px;
+    }
+    .modal-content-two img{
+        height: 300px;
+    }
+    .modal-content-three img{
+        height: 250px;
+    }
 
 
 
@@ -131,6 +202,12 @@ export default{
         transform: scale(1);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
       }
+      .example{
+        border-radius: 0.5rem;
+        background-color: rgb(6, 161, 161);
+      }
+      
+      
     
 /*********************two */
 
@@ -175,6 +252,10 @@ export default{
         transform: scale(1);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
       }
+      .example-two{
+        border-radius: 0.5rem;
+        background-color: rgb(6, 161, 161);
+      }
 
 /**********three */
 .modal-three {
@@ -216,6 +297,10 @@ export default{
         visibility: visible;
         transform: scale(1);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+      }
+      .example-three{
+        border-radius: 0.5rem;
+        background-color: rgb(6, 161, 161);
       }
 
    
