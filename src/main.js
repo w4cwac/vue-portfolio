@@ -59,3 +59,22 @@ triggerTwo.addEventListener("click", toggleModalTwo);
 closeButtonTwo.addEventListener("click", toggleModalTwo);
 window.addEventListener("click", windowOnClickTwo);
 
+//3eme modal
+var modalThree = document.querySelector(".modal-three");
+var triggerThree = document.querySelector(".example-three");
+var closeButtonThree = document.querySelector(".close-button-three");
+
+function toggleModalThree() {
+    modalThree.classList.toggle("show-modal-three");
+}
+
+function windowOnClickThree(event) {
+    if (event.target === modalThree) {
+        toggleModalThree();
+    }
+}
+
+
+triggerThree.addEventListener("click", toggleModalThree);
+closeButtonThree.addEventListener("click", toggleModalThree);
+window.addEventListener("click", windowOnClickThree);
