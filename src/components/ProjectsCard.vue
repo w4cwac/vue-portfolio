@@ -2,10 +2,12 @@
     <div class="mainCard">
         <div class="container-one">
             <h2>Mes Projets</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Itaque, quia ipsum debitis doloremque dolorum rem fugit. 
-                Iste mollitia, illum adipisci ea officia corrupti!
-                 Rerum, odit molestias recusandae beatae quod minima.</p>
+            <p>
+                Lors de ma formation avec le CEF, j'ai dû réaliser quelques projets afin de valider ou de m'entrainer à
+                l'utilisation de certaine technologies, pour l'instant j'en ai réalisé 3.
+                La première est un CV avec mes informations personnelles, le deuxième est un cahier des charges et le troisième
+                est un espace commentaire dynamique.
+            </p>
         </div>
         <div class="container-two">
             <div class="project-container">

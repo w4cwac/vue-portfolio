@@ -32,6 +32,7 @@
 
       </div>
       <div id="contact">
+        <Contact />
 
       </div>
     </main>
@@ -66,13 +67,15 @@
 
 import Apropos from './components/Apropos.vue';
 import ProjectsCard from './components/ProjectsCard.vue';
+import Contact from './components/Contact.vue';
 
 
 export default{
   name: 'App',
   components :{
     Apropos,
-    ProjectsCard
+    ProjectsCard,
+    Contact,
 }
 
 
@@ -152,15 +155,13 @@ nav
 }
 #contact{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(255, 120, 120);
-  height: 100vh;
-  width: 75%;
+  width: 45vw;
   margin: auto;
   margin-top: 5%;
-  border-style: double;
-  border-color: red;
+  border-radius: 25px;
+  box-shadow: 0 0 2em white;
 }
 
 .social1{

@@ -14,7 +14,7 @@
                     </a>
                 </div>
                 <div class="links">
-                    <a href="https://www.facebook.com/hugo.wacogne.5">
+                    <a href="https://www.facebook.com/hugo.wacogne.5" onclick="window.open(this.href);return false">
                         <img src="../assets/messenger.png" alt="bulle avec un éclair dedans">
                         <h2>Messenger</h2>
                     </a>
@@ -47,7 +47,7 @@
                 </div>
             
                 <div class="project-button">
-                    <a href="https://www.canva.com/design/DAEhvxjWh_Y/view">Mon CV</a>
+                    <a href="https://www.canva.com/design/DAEhvxjWh_Y/view" onclick="window.open(this.href);return false">Mon CV</a>
                 </div>
             </div>
         </div>
