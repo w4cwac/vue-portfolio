@@ -1,7 +1,8 @@
 <template>
   <body>
     <nav id="nav">
-      <a href="">
+      <a href="#nav">
+        <img src="./assets/logo.png" alt="">
        
       </a>
       <div class="titre">
@@ -112,6 +113,12 @@ a:visited{
 
 a:hover{
   color: rgb(255, 136, 0);
+}
+
+nav a img{
+  position: fixed;
+  margin-top: -30px;
+  height: 70px;
 }
 
 
