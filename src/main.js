@@ -93,9 +93,7 @@ function sendEmail(){
 
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "wacogne.hugo@gmail.com",
-        Password : "3FF31D5C9ABDC4BA3CD2AD4EE2D34467F3FE",
+        SecureToken : "e78fd247-f8ff-40e3-8ecd-86e906b37deb",
         To : 'wacogne.hugo@gmail.com',
         From : "wacogne.hugo@gmail.com",
         Subject : subject.value,
@@ -172,6 +170,9 @@ form.addEventListener("submit", (e) =>{
     !subject.classList.contains("error") && !message.classList.contains("error")) {
 
         sendEmail();
+
+        form.reset();
+        return false;
 
     }
 
