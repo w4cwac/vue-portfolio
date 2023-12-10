@@ -10,11 +10,11 @@
                 <div class="links">
                     <a href="">
                         <img src="../assets/whatsapp.png" alt="bulle avec un telephone dedans" class="whatsapp">
-                        <h2>WhatsApp</h2>
+                        <h2>06-23-21-45-13</h2>
                     </a>
                 </div>
                 <div class="links">
-                    <a href="">
+                    <a href="https://www.facebook.com/hugo.wacogne.5">
                         <img src="../assets/messenger.png" alt="bulle avec un éclair dedans">
                         <h2>Messenger</h2>
                     </a>
@@ -26,10 +26,11 @@
             <div class="about-me">
                 <h1>A-propos</h1>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Voluptatibus, delectus! Eum alias culpa, saepe illum id beatae exercitationem 
-                    nihil quo repellendus accusantium iste autem reiciendis inventore delectus 
-                    optio iusto nesciunt!
+                    Je me présente, Hugo Wacogne, né le 04/01/2001, je suis actuellement en train de suivre la formation
+                    du CEF pour devenir Développeur Web et Web mobile.
+                    Durant cette Formation j'ai pu réaliser plusieurs projets, en utilisant différentes technologies.
+                    Vous trouverez ci dessous des liens vers mes différents projets ainsi qu'un formulaire permettant de me contacter par mail 
+                    directement, sinon je vous ai laissé plusieurs réseaux sociaux pour me joindre.
                 </p>
             </div>
             <div class="technology">
@@ -42,11 +43,11 @@
             </div>
             <div class="button-container">
                 <div class="project-button">
-                    <a href="">Mes Projets</a>
+                    <a href="#project">Mes Projets</a>
                 </div>
             
                 <div class="project-button">
-                    <a href="">Mon CV</a>
+                    <a href="https://www.canva.com/design/DAEhvxjWh_Y/view">Mon CV</a>
                 </div>
             </div>
         </div>
@@ -65,6 +66,9 @@ export  default{
 <style scoped>
     img{
         height: 20px;
+    }
+    .about-me p{
+        text-indent: 30px;
     }
 
     .main-container{

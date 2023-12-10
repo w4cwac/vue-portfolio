@@ -27,6 +27,8 @@
 
       </div>
       <div id="project">
+        <ProjectsCard/>
+    
 
       </div>
       <div id="contact">
@@ -36,21 +38,21 @@
     <footer>
       <div class="social-links">
         <div class="social1">
-          <a href="https://www.instagram.com/w4cwac_/">
+          <a href="https://www.instagram.com/w4cwac_/" onclick="window.open(this.href);return false">
             <img src="./assets/insta.png" class="insta">
             <p>Instagram</p>
           </a>
         </div>
-        <a href="https://twitter.com/hugo_wacogne">
+        <a href="https://twitter.com/hugo_wacogne" onclick="window.open(this.href);return false">
           <img src="./assets/twitter.png" class="twitter">
           <p>Twitter</p>
         </a>
-        <a href="https://github.com/w4cwac">
+        <a href="https://github.com/w4cwac" onclick="window.open(this.href);return false">
           <img src="./assets/githubv2.png" class="git">
           <p>GitHub</p>
         </a>
         <div class="social2">
-          <a href="https://discordapp.com/users/327839699144015872">
+          <a href="https://discordapp.com/users/327839699144015872" onclick="window.open(this.href);return false">
             <img src="./assets/discord.png" class="discord">
             <p>Discord</p>
           </a>
@@ -63,12 +65,15 @@
 <script>
 
 import Apropos from './components/Apropos.vue';
+import ProjectsCard from './components/ProjectsCard.vue';
+
 
 export default{
   name: 'App',
   components :{
     Apropos,
-  }
+    ProjectsCard
+}
 
 
   
@@ -138,13 +143,12 @@ nav
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 120, 120);
-  height: 100vh;
-  width: 75%;
+  background-color: white;
+  width: 45vw;
   margin: auto;
   margin-top: 5%;
-  border-style: double;
-  border-color: red;
+  border-radius: 25px;
+  box-shadow: 0 0 2em white;
 }
 #contact{
   display: flex;
@@ -268,9 +272,6 @@ nav.active ul{
   backdrop-filter: blur(5px);
   
 
-}
-.credit{
-  background-color: aqua;
 }
 </style>
 
