@@ -7,12 +7,23 @@ createApp(App).mount('#app')
 
 
 //fonction du button burger (menu déroulant)
-const icons = document.querySelector('#icons');
-const nav = document.querySelector('#nav');
+var modalMenu = document.querySelector(".modal-menu");
+var triggerMenu = document.querySelector(".example-menu");
+var closeButtonMenu = document.querySelector(".close-button-menu");
 
-icons.addEventListener('click' , () => {
-    nav.classList.toggle("active");
-})
+function toggleModalMenu() {
+    modalMenu.classList.toggle("show-modal-menu");
+}
+
+function windowOnClickMenu(event) {
+    if (event.target === modalMenu) {
+        toggleModalMenu();
+    }
+}
+
+triggerMenu.addEventListener("click", toggleModalMenu);
+closeButtonMenu.addEventListener("click", toggleModalMenu);
+window.addEventListener("click", windowOnClickMenu);
 
 //fonction derniere modif 
 
