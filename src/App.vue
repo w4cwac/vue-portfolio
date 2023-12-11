@@ -23,12 +23,15 @@
 
     </nav>
     <main>
+      <div class="router">
+        <RouterLink/>
+      </div>
       <div id="a-propos">
         <Apropos />
 
       </div>
       <div id="project">
-        <ProjectsCard/>
+        <ProjectsCard/> 
     
 
       </div>
@@ -63,6 +66,7 @@
       <p id="last-modif"></p>
     </footer>
   </body>
+  <router-view/> 
 </template>
 <script>
 
@@ -89,6 +93,9 @@ export default{
 </script>
 
 <style scoped>
+.router{
+  background: white;
+}
 *{
   padding: 0;
   margin: 0;

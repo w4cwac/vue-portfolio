@@ -1,9 +1,11 @@
 
 
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './App.vue' 
 
 createApp(App).mount('#app')
+
+const app = createApp(App)
 
 
 //fonction du button burger (menu déroulant)
@@ -188,3 +190,9 @@ form.addEventListener("submit", (e) =>{
     }
 
 });
+
+ 
+import router from '@/router'
+app.use(router)
+
+
