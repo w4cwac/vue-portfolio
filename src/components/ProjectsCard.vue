@@ -307,9 +307,4 @@ export default{
         border-radius: 0.5rem;
         background-color: rgb(6, 161, 161);
       }
-
-   
-    
-
-
 </style>
