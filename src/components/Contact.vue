@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="textarea-field field">
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
                     <div class="error-txt">Message can't be blank</div>
                 </div>
 

@@ -110,7 +110,7 @@ function sendEmail(){
       }
     );
 }
-//verification des input pour etre sur qu'aucun ne soit vide 
+//verification des input pour etre sur qu'aucun ne soit vide git 
 function checkInputs() {
     const items = document.querySelectorAll(".item")
 

@@ -25,37 +25,33 @@
     <main>
       <div id="a-propos">
         <Apropos />
-
       </div>
       <div id="project">
         <ProjectsCard/>
-    
-
       </div>
       <div id="contact">
         <Contact />
-
       </div>
     </main>
     <footer>
       <div class="social-links">
         <div class="social1">
           <a href="https://www.instagram.com/w4cwac_/" onclick="window.open(this.href);return false">
-            <img src="./assets/insta.png" class="insta">
+            <img src="./assets/insta.png" alt="logo carré avec un vieil appareil photo(instagram)" class="insta">
             <p>Instagram</p>
           </a>
         </div>
         <a href="https://twitter.com/hugo_wacogne" onclick="window.open(this.href);return false">
-          <img src="./assets/twitter.png" class="twitter">
+          <img src="./assets/twitter.png" alt="logo d'un petit oiseau sur un fond bleu (twitter)" class="twitter">
           <p>Twitter</p>
         </a>
         <a href="https://github.com/w4cwac" onclick="window.open(this.href);return false">
-          <img src="./assets/githubv2.png" class="git">
+          <img src="./assets/githubv2.png" alt="logo rond à fond blanc avec des bords bleu et une silhouette de chat (github)" class="git">
           <p>GitHub</p>
         </a>
         <div class="social2">
           <a href="https://discordapp.com/users/327839699144015872" onclick="window.open(this.href);return false">
-            <img src="./assets/discord.png" class="discord">
+            <img src="./assets/discord.png" alt="tête du robot mascotte de discord" class="discord">
             <p>Discord</p>
           </a>
         </div>
