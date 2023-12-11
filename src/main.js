@@ -79,7 +79,7 @@ triggerThree.addEventListener("click", toggleModalThree);
 closeButtonThree.addEventListener("click", toggleModalThree);
 window.addEventListener("click", windowOnClickThree);
 
-//Envoi Email
+//Envoi Email avec SmtpJS
 const form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
@@ -101,7 +101,7 @@ function sendEmail(){
     }).then(
       message => {
         if (message == "OK") {
-            Swal.fire(
+            Swal.fire(//customisation de la pop up de validation d'envoi du mail avec sweetalert2
                 'Success!',
                 'Message sent Successfully!',
                 'success'
@@ -110,7 +110,7 @@ function sendEmail(){
       }
     );
 }
-
+//verification des input pour etre sur qu'aucun ne soit vide 
 function checkInputs() {
     const items = document.querySelectorAll(".item")
 
@@ -140,7 +140,9 @@ function checkInputs() {
         });
     }
 }
-
+//la fonction checkEmail doit vérifier si l'email est valide et donc contient un @ et un exemple.com si ce n'est pas le cas elle doit afficherEnter a valid email address 
+//sauf que dans mon cas ca ne fonctionne pas et je ne trouve pas d'ou ca vient
+//la fonction verifie bien la validité de l'address mais n'affiche pas le bon message
 function checkEmail(){
     const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
     const errorTxtEmail = document.querySelector(".error-txt email");

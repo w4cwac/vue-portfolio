@@ -67,19 +67,16 @@ export  default{
     img{
         height: 20px;
     }
-    .about-me p{
-        text-indent: 30px;
-    }
 
-    .main-container{
+    .main-container{ /*div principale de la carte*/
         display: flex;
         flex-direction: row;
-        background-color: gray;
+        background-color: rgb(58, 3, 209);
         border-radius: 25px;
         height: 100%
     }
 
-    .container-one{
+    .container-one{/*PP + infos perso et poste recherché*/
         background-color: aqua;
         width: 30%;
         padding: 2%;
@@ -102,8 +99,8 @@ export  default{
         height: 3.5rem;
     }
 
-    .container-two{
-        background-color: blueviolet;
+    .container-two{/*A propos + tech etudié*/
+        background-color: rgb(103, 103, 249);
         margin: 2.5%;
         width: 70%;
     }
@@ -115,6 +112,12 @@ export  default{
 
     .about-me h1{
         text-align: center;
+    }
+
+    .about-me p{
+        color: white;
+        margin: 10px;
+        text-indent: 30px;
     }
     
     .technology{

@@ -109,7 +109,7 @@ export default{
     .mainCard{
         display: flex;
         flex-direction: column;
-        background-color: gray;
+        background-color: rgb(58, 3, 209);
         border-radius: 25px;
         height: 100%;
         text-align: center;
@@ -120,7 +120,7 @@ export default{
     }
     .container-two{
         border-radius: 25px;
-        background-color: blueviolet;
+        background-color: rgb(103, 103, 249);
         margin: 2.5%;
     }
     .project-container{
@@ -135,6 +135,10 @@ export default{
 
     .project img{
         height: 70px;
+    }
+
+    .project h2{
+        color: white;
     }
     
     li{
@@ -162,8 +166,7 @@ export default{
     }
 
 
-
-    /* Modal*/
+/**********premier modal***********/
       .modal {
         position: fixed;
         left: 0;
@@ -211,7 +214,7 @@ export default{
       
       
     
-/*********************two */
+/**********deuxième modal***********/
 
 
       .modal-two {
@@ -259,7 +262,7 @@ export default{
         background-color: rgb(6, 161, 161);
       }
 
-/**********three */
+/**********troisième modal***********/
 .modal-three {
         position: fixed;
         left: 0;
