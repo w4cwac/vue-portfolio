@@ -8,18 +8,18 @@
       <div class="titre">
         <h3>Mon Portfolio</h3>
       </div>
-      <ul>
-        <li>
-          <a href="#a-propos">A propos</a>
-        </li>
-        <li>
-          <a href="#project">Projet</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <div id="icons"></div>
+      <button id="icons" class="example-menu">Menu</button>
+          <div class="modal-menu">
+            <div class="modal-content-menu">
+                <span class="close-button-menu">&times;</span>
+                <h2>Menu</h2>
+                <ul>
+                  <li><a href="#a-propos">A propos</a></li>
+                  <li><a href="#project">Mes projets</a></li>
+                  <li><a href="#contact">Me contacter</a></li>
+                </ul>
+            </div>
+          </div>
 
     </nav>
     <main>
@@ -110,6 +110,51 @@ a:visited{
 a:hover{
   color: rgb(255, 136, 0);
 }
+.modal-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: #cccccc; */
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+      }
+      .modal-content-menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #eeeeee;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+      }
+      .close-button-menu {
+        float: right;
+        width: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #eeeeee;
+      }
+      .close-button-menu:hover {
+        background-color: #adadad;
+      }
+      .show-modal-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+      }
+      .example-menu{
+        border-radius: 0.5rem;
+        background-color: rgb(6, 161, 161);
+      }
 
 nav a img{
   position: fixed;
@@ -230,53 +275,12 @@ h3{
 
 #icons {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 4%;
   right: 8%;
   cursor: pointer;
 }
 
-
-#icons:before{
-  content:"\2630"; 
-  color: white;
-  position: fixed;
-
-}
-
-.active #icons::before{
-  content: "\2715";
-  color: white;
-  position: fixed;
-}
-
-nav ul {
-  position: fixed;
-  top: 5%;
-  left: -100%;
-  flex-direction: column;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.25s;
-  width: 100vw;
-  height: 100vh;
-}
-nav li {
-  padding: 3px 0;
-}
-
-nav li:hover{
-  background: rgba(227, 227, 227, 0.571);
-}
-
-nav.active ul{
-  left: 0;
-  backdrop-filter: blur(5px);
-  
-
-}
 </style>
 
 
